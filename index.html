@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <!-- section needed to import fontawesome cdn to use fontawesome icons (https://fontawesome.com/v6/search?c=editing) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="main-content">
+    <header class="section sec1 header active" id="home">
+        <div class="home-content">
+            <div class="name">
+                <div class="firstName">Lennart</div>
+                <div class="secondName">Maack</div>
+            </div>
+            <div class="title">M.Sc. Student, Mechatronics - Robotics and Intelligent Systems</div>
+            <div class="title">& Software Engineer</div>
+            <div class="links">
+                <a 
+                    href="www.linkedin.com/in/lennart-maack"
+                    class="resume"
+                    target="_blank"><i class="fas fa-file-alt"></i> Resume
+                </a>
+                <a 
+                    href="https://www.linkedin.com/in/lennart-maack/" 
+                    target="_blank"
+                    class="social"
+                    ><i
+                        class="fab fa-linkedin fa-2x"
+                        data-aos="fade-right"
+                        data-aos-delay="300"
+                        data-aos-offset="-100"
+                    ></i
+                ></a>
+                <a 
+                    href="https://github.com/Lennart-Ma" 
+                    target="_blank"
+                    class="social"
+                    ><i
+                        class="fab fa-github fa-2x"
+                        data-aos="fade-right"
+                        data-aos-offset="-100"
+                    ></i
+                ></a>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="section sec2 about" id="about"></section>
+        <section class="section sec3 work" id="work"></section>
+        <section class="section sec4 pubsAndProjects" id="pubsAndProjects"></section>
+        <section class="section sec5 blogArticles" id="blogArticles"></section>
+        <section class="section sec6 skills" id="skills"></section>
+        <section class="section sec7 contact" id="contact"></section>
+    </main>
+
+    <div class="controls">
+        <div class="control control-1 home active-btn" data-id="home"> <i class="fa-solid fa-house"></i> </div>
+        <div class="control control-2" data-id="about"> About </div>
+        <div class="control control-3" data-id="work"> Work </div>
+        <div class="control multiline control-4" data-id="pubsAndProjects"> Papers & </br> Projects </div>
+        <div class="control control-5" data-id="blogArticles"> Blog Articles </div>
+        <div class="control control-6" data-id="skills"> Skills </div>
+        <div class="control control-7" data-id="contact"> Contact </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
