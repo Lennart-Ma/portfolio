@@ -184,7 +184,7 @@ section {
       -ms-flex-align: left;
           align-items: left;
   height: 100%;
-  left: 56%;
+  right: -48%;
   top: 15%;
   text-align: left;
   width: 575px;
