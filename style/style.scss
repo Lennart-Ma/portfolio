@@ -51,7 +51,7 @@ section{
     position: absolute;
     left: 0;
     top: 0;
-    padding: 3rem 18rem;
+    padding: 6rem 6rem;
 }
 
 .section{
@@ -62,7 +62,7 @@ section{
 
 .sec1{
     background-image: url('/images/hamburg.jpg');
-    background-size: 1750px 1020px;
+    background-size: 1950px 1300px;
     filter: brightness(85%);
     //transform: scaleX(-1);
     display: none;
@@ -72,13 +72,13 @@ section{
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #6c7983;
+    //background-color: #6c7983;
 }
 
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
-    background-color: #e9976f;
+    background-color: #f8f8f8;
 }
 
 .sec4{
@@ -164,11 +164,11 @@ section{
     align-items: left;
     height: 100%;
     right: -48%;
-    top: 15%;
+    top: 20%;
     text-align: left;
     width: 575px;
     height: 450px;
-    padding: 0%;
+    padding: 20;
     .name{
         position: relative;
         display: flex;
@@ -236,3 +236,89 @@ section{
             transform: scale(1.2);
         }
 }
+
+
+// About section
+
+.about-content{
+    position: relative;
+    display: flex;
+    align-items: left;
+    flex-direction: row;
+    top: 100px;
+    left: 25%;
+    width: 875px;
+    height: 1050px;
+    .introduction{
+        position: relative;
+        display: flex;
+        top: 20%;
+        animation: introduction 1s ease-out;
+    }
+    .description{
+        position: relative;
+        display: flex;
+        top: 30%;
+        animation: description 1s ease-out;
+    }
+}
+
+@keyframes introduction {
+    0%   { 
+    transform: translateX(-75%); 		
+    }
+    100% { 
+    transform: translateX(0%); 
+    }
+   }
+
+   
+@keyframes description {
+    0%   { 
+    transform: translateX(75%); 		
+    }
+    100% { 
+    transform: translateX(0%); 
+    }
+   }
+
+
+
+// Work section
+
+.work-content{
+    position: relative;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    top: 100px;
+    left: 25%;
+    width: 875px;
+    height: 1250px;
+    .fraunhofer-content{
+        position: relative;
+        display: flex;
+        top: 10%;
+        flex-direction: row;
+        border-bottom: solid;
+        border-right: solid;
+        border-color: red;
+        animation: fraunhofer-content 1s ease-out;
+        .fraunhofer-icon{
+            padding: 20px;
+        }
+        .fraunhofer-text{
+            padding: 20px;
+            color: #000;
+        }
+    }
+}
+
+@keyframes fraunhofer-content {
+    0%   { 
+    transform: translateX(-15%); 		
+    }
+    100% { 
+    transform: translateX(0%); 
+    }
+   }

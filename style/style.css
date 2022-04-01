@@ -51,7 +51,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
+  padding: 6rem 6rem;
 }
 
 .section {
@@ -64,7 +64,7 @@ section {
 
 .sec1 {
   background-image: url("/images/hamburg.jpg");
-  background-size: 1750px 1020px;
+  background-size: 1950px 1300px;
   -webkit-filter: brightness(85%);
           filter: brightness(85%);
   display: none;
@@ -76,14 +76,13 @@ section {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
-  background-color: #6c7983;
 }
 
 .sec3 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
-  background-color: #e9976f;
+  background-color: #f8f8f8;
 }
 
 .sec4 {
@@ -185,11 +184,11 @@ section {
           align-items: left;
   height: 100%;
   right: -48%;
-  top: 15%;
+  top: 20%;
   text-align: left;
   width: 575px;
   height: 450px;
-  padding: 0%;
+  padding: 20;
 }
 
 .home-content .name {
@@ -291,5 +290,153 @@ section {
   transition: all 0.4s;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.about-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 100px;
+  left: 25%;
+  width: 875px;
+  height: 1050px;
+}
+
+.about-content .introduction {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 20%;
+  -webkit-animation: introduction 1s ease-out;
+          animation: introduction 1s ease-out;
+}
+
+.about-content .description {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 30%;
+  -webkit-animation: description 1s ease-out;
+          animation: description 1s ease-out;
+}
+
+@-webkit-keyframes introduction {
+  0% {
+    -webkit-transform: translateX(-75%);
+            transform: translateX(-75%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes introduction {
+  0% {
+    -webkit-transform: translateX(-75%);
+            transform: translateX(-75%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes description {
+  0% {
+    -webkit-transform: translateX(75%);
+            transform: translateX(75%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes description {
+  0% {
+    -webkit-transform: translateX(75%);
+            transform: translateX(75%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.work-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 100px;
+  left: 25%;
+  width: 875px;
+  height: 1250px;
+}
+
+.work-content .fraunhofer-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 10%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: solid;
+  border-right: solid;
+  border-color: red;
+  -webkit-animation: fraunhofer-content 1s ease-out;
+          animation: fraunhofer-content 1s ease-out;
+}
+
+.work-content .fraunhofer-content .fraunhofer-icon {
+  padding: 20px;
+}
+
+.work-content .fraunhofer-content .fraunhofer-text {
+  padding: 20px;
+  color: #000;
+}
+
+@-webkit-keyframes fraunhofer-content {
+  0% {
+    -webkit-transform: translateX(-15%);
+            transform: translateX(-15%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes fraunhofer-content {
+  0% {
+    -webkit-transform: translateX(-15%);
+            transform: translateX(-15%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
